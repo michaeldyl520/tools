@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <block name="title"><title>{$title}</title></block>
+        <block name="description"><meta name="description" content="{$description}"></block>
+        <block name=""keywords"><meta name="keywords" content="{$keywords}"></block>
+        <!-- 新 Bootstrap 核心 CSS 文件 -->
+        <link rel="stylesheet" href="{$Think.config.static_url.0}/static/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- 可选的Bootstrap主题文件（一般不用引入） -->
+        <link rel="stylesheet" href="{$Think.config.static_url.0}/static/bootstrap/3.3.4/css/bootstrap.min.css">
+        <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+        <script src="{$Think.config.static_url.0}/static/jquery/2.1.4/jquery.min.js">
+        </script>
+        <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+        <script src="{$Think.config.static_url.0}/static/bootstrap/3.3.4/js/bootstrap.min.js">
+        </script>
+		<!--顶部加载条-->
+		<script src="{$Think.config.static_url.0}/static/js/pace.js">
+        </script>
+		<link rel="stylesheet" href="{$Think.config.static_url.0}/static/css/pace.css">
+		<!--sweetAlert-->
+		<script src="{$Think.config.static_url.0}/static/js/sweet-alert.min.js">
+        </script>
+		<link rel="stylesheet" href="{$Think.config.static_url.0}/static/css/sweet-alert.css">
+		
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>开发制作工作常用工具 
+                    <small>
+                        by <a href="http://www.jiliuke.com">激流客</a>
+                    </small>
+                </h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search for..."><span class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="search">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                            </button>
+                        </span>
+                    </div>
+                    <!-- /input-group -->
+                    <div class="list-group">
+                        <a href="{:Url('/index')}" class="list-group-item">首页 </a>
+                        <a href="{:Url('/index/Md5/index')}" class="list-group-item">MD5 </a>
+                        <a href="{:Url('/index/Timestamp/index')}" class="list-group-item">时间戳</a>
+                        <a href="{:Url('/index/Ip2long/index')}" class="list-group-item" title="将一个IPV4的字符串互联网协议转换成数字格式">ip2long</a>
+                        <a href="{:Url('/index/Long2ip/index')}" class="list-group-item">long2ip</a>
+                    </div>
+                </div>
+                <div class="col-md-8 col-sm-8 col-xs-8">
+                    
+                     {block name="content"}{/block}
+  
+                </div>
+            </div>
+			<div class="row">
+			<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+    Copyright &copy;
+                <?php echo date('Y',time());?>
+                <a href="http://www.jiliuke.com" target="_blank">jiliuke.com</a>
+                版权所有
+                <script type="text/javascript">
+                    var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+                    document.write(unescape("%3Cspan id='cnzz_stat_icon_1253725796'%3E%3C/span%3E%3Cscript src='" +
+                    cnzz_protocol +
+                    "s95.cnzz.com/stat.php%3Fid%3D1253725796%26show%3Dpic' type='text/javascript'%3E%3C/script%3E"));
+                </script>
+  </div>
+</nav>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <p class="footer-text">
+                
+            </p>
+        </div>
+        <!-- /.footer -->
+    </div>
+        </div>
+    </body>
+	<script src="{$Think.config.static_url.0}/static/js/tools.js"></script>
+</html>

@@ -1,0 +1,13 @@
+{extend name="public/base" /}
+{block name="content"}
+<div class="col-lg-12">
+	<p>方法long2ip()将一个地址字符串数据转换成正常的ip。</p>
+	<div class="input-group">
+		<input type="text" class="form-control" placeholder="输入IPV4常规IP"
+			id="ipString" value="{$ipString}" /> <span class="input-group-btn">
+			<button class="btn btn-default" type="button" id="long2ip">Go!</button>
+		</span> <input type="text" class="form-control" placeholder="转换后的值"
+			id="ip" />
+	</div>
+</div>
+{/block}
