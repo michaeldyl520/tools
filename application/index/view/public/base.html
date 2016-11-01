@@ -36,20 +36,18 @@
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-4 col-xs-4 hidden-xs">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search for..."><span class="input-group-btn">
-                            <button class="btn btn-default" type="button" id="search">
-                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
-                            </button>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Search for..." id="search"><span class="input-group-btn">
                         </span>
                     </div>
                     <!-- /input-group -->
-                    <div class="list-group">
-                        <a href="{:Url('/index')}" class="list-group-item">首页 </a>
-                        <a href="{:Url('/index/Md5/index')}" class="list-group-item">MD5 </a>
-                        <a href="{:Url('/index/Timestamp/index')}" class="list-group-item">时间戳</a>
-                        <a href="{:Url('/index/Ip2long/index')}" class="list-group-item" title="将一个IPV4的字符串互联网协议转换成数字格式">ip2long</a>
-                        <a href="{:Url('/index/Long2ip/index')}" class="list-group-item">long2ip</a>
+                    <div class="list-group" id="list-group">
+                        <a href="{:Url('/index')}" key="home" class="list-group-item">home</a>
+                        <a href="{:Url('/index/Md5/index')}" key="md5" class="list-group-item">md5</a>
+                        <a href="{:Url('/index/Timestamp/index')}" key="timestamp" class="list-group-item">timestamp</a>
+                        <a href="{:Url('/index/Ip2long/index')}" key="ip2long" class="list-group-item" title="将一个IPV4的字符串互联网协议转换成数字格式">ip2long</a>
+                        <a href="{:Url('/index/Long2ip/index')}" key="long2ip" class="list-group-item" title="将数字格式转换成一个IPV4的字符串互联网协议">long2ip</a>
+                        <a href="{:Url('/index/Unicodedecode/index')}" key="base64_decode" class="list-group-item">unicode解码</a>
                     </div>
                 </div>
                 <div class="col-md-8 col-sm-8 col-xs-8">
